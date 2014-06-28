@@ -11,7 +11,6 @@ $(document).ready(function(){
 		$('welcome-page').removeClass().addClass('hide-section');
 		$('about-page').removeClass().addClass('hide-section');
 		$('past-work').removeClass().addClass('hide-section');
-		$('contact-overlay').removeClass().addClass('hide-section');
 		this.removeClass('hide-section').addClass('show-section');
 	};
 
@@ -33,7 +32,6 @@ $(document).ready(function(){
 	$('.main').heightFromWin();
 	$('about-page').addClass('hide-section').heightFromWin();
 	$('past-work').addClass('hide-section').heightFromWin();
-	$('contact-overlay').addClass('hide-section').heightFromWin();
 	$('welcome-page').addClass('show-section').heightFromWin();
 
 	// Main Nav Handlers
@@ -47,7 +45,7 @@ $(document).ready(function(){
 	});
 	$('a.contact-link').on("click", function(e){
 		e.preventDefault();
-		$('contact-overlay').toggleClass('show-contact');
+		$('.contact-section').toggleClass('show-contact');
 	});
 	$('a.home-link').on("click", function(e){
 		e.preventDefault();
@@ -55,5 +53,5 @@ $(document).ready(function(){
 	});
 	$('a.game-link').on("click", function(){
 		$('ul.game-list').toggleClass('showlist');
-	})	
+	});
 });

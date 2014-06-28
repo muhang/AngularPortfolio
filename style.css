@@ -710,7 +710,61 @@ CONTACT
 -----------------------------------------------------*/
 
 .contact-section {
+	height: 0px;
+	overflow: hidden;
+}
 
+.show-contact {
+	height: 50%;
+	border-top: 1px solid #f4f5f4;
+}
+
+form.contactform * {
+	display: block;
+}
+
+label {
+	color: #f4f5f4;
+	font-size: 20px;
+	margin: 20px 5%;
+}
+
+input[type="text"] {
+	height: 40px;
+	width: 90%;
+	margin-left: 5%;
+	background: none;
+	color: #f4f5f4;
+	border: 1px solid #f4f5f4;
+	border-radius: 0px;
+	font-size: 20px;
+	font-weight: 300;
+	padding-left: 10px;
+}
+
+textarea {
+	width: 90%;
+	margin-left: 5%;
+	color: #f4f5f4;
+	background: none;
+	border: 1px solid #f4f5f4;
+	border-radius: 0px;
+}
+
+input[type="submit"] {
+	width: 150px;
+	height: 40px;
+	margin: 25px auto 0px;
+	background: none;
+	border: 1px solid #f4f5f4;
+	border-radius: 0px;
+	color: #f4f5f4;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	background: #f4f5f4;
+	color: #000;
 }
 
 /*-----------------------------------------------------
@@ -722,14 +776,16 @@ TRANSITIONS
 }
 
 .fullwork-btn:hover:before, .fullwork-btn:before, 
-.hidden, .fullwork-btn p, .show-work, .work-maintext {
+.hidden, .fullwork-btn p, .show-work, .work-maintext, 
+input[type="submit"] {
 	transition: all 0.4s linear;
 	-webkit-transition: all 0.4s linear;
 	-moztransition: all 0.4s linear;
 }
 
 .show-work, .work-maintext, .workUp, .workDown, 
-.featured-item, .featured-header, .featured-description {
+.featured-item, .featured-header, .featured-description, 
+.contact-section, .show-contact {
 	transition: all 0.6s ease-out;
 	-webkit-transition: all 0.6s ease-out;
 	-moztransition: all 0.6s ease-out;
