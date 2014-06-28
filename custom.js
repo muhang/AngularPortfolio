@@ -28,11 +28,14 @@ $(document).ready(function(){
 	};
 
 	// Initial Config
-	$('.nav').heightFromWin();
+	if($(window).width() > 1024)
+	{
+		$('.nav').heightFromWin();
 	$('.main').heightFromWin();
 	$('about-page').addClass('hide-section').heightFromWin();
 	$('past-work').addClass('hide-section').heightFromWin();
 	$('welcome-page').addClass('show-section').heightFromWin();
+	}
 
 	// Main Nav Handlers
 	$('a.about-link').on("click", function(e){
