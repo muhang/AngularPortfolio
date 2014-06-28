@@ -1,0 +1,42 @@
+<div class="page-contanier work-section" ng-controller="WorkController as pastwork">
+	<div class="featured-work">
+		<div class="featured-item" ng-repeat="work in pastwork.works" ng-show="work.featured">
+			<div class="featured-overlay">
+				<div class="featured-header {{work.classname}}">
+					<h2>{{work.name}}</h2>
+				</div>
+				<div class="featured-description">
+					<p>Platform: {{work.platform}}</p>
+					<p>Tools: {{work.tools}}</p>
+					<p>{{work.description}}</p>
+					<a href="{{work.url}}" class="worklist-link">Visit Site</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fullwork-btn">
+		<p class="showproj">All Projects</p>
+		<p class="hideproj hidden">Hide List</p>
+	</div>
+	<div class="work-maintext">
+		<div class="full-work">
+			<h2 class="full-head">Full List of Work</h2>
+			<div class="worklist-wrapper">
+				<ul class="worklist">
+					<li class="worklist-item" ng-repeat="work in pastwork.works">
+						<div class="worklist-header">
+							<h2>{{work.name}}</h2>
+						</div>
+						<div class="worklist-content">
+							<p>Platform: {{work.platform}}</p>
+							<p>Tools: {{work.tools}}</p>
+							<p>{{work.description}}</p>
+							<a href="{{work.url}}" class="worklist-link">Visit Site</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="pastwork.js"></script>

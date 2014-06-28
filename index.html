@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="pfolio">
+	<head>
+		<meta charset="utf-8">
+		<title>AngularJS Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:300|Lato:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="pure-g main">
+			<div class="pure-u-1-5 nav">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="#" class="about-link navlink">About Me</a></li>
+					<li class="nav-item"><a href="#" class="work-link navlink">Past Work</a></li>
+					<li class="nav-item"><a href="#" class="game-link navlink">Games</a>
+					</li>
+					<li class="nav-item"><a href="#" class="contact-link navlink">Contact</a></li>
+					<li class="nav-item home-item"><a href="#" class="home-link navlink">Home</a></li>
+				</ul>
+				<ul class="game-list">
+							<li><a href="#" class="mu-link navlink">Match Link</a></li>
+						</ul>
+				<contact-overlay>
+			</div>
+			<div class="pure-u-4-5 content">
+				<welcome-page></welcome-page>
+				<about-page></about-page>
+				<past-work></past-work>
+			</div>
+		</div>
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="custom.js"></script>
+	</body>
+</html>

@@ -1,0 +1,666 @@
+/*-----------------------------------------------------
+AUTHOR: Muhan Guclu
+WEBSITE: http://magicmuhan.com
+
+Primary Stylesheet
+-----------------------------------------------------*/
+
+/*-----------------------------------------------------
+GENERAL STYLES
+-----------------------------------------------------*/
+
+body {
+	background: #1c303a;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Lato', sans-serif;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	line-height: 140%;
+}
+
+p, li, a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	color: #f4f5f4;
+}
+
+.content {
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+.page-container {
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+.hide-section {
+	z-index: 1;
+	opacity: 0.0;
+}
+
+.show-section {
+	z-index: 10;
+	opacity: 1.0;
+}
+
+welcome-page, about-page, past-work {
+	position: absolute;
+	right: 0px;
+	width: 80%;
+	height: 100%;
+}
+
+/*-----------------------------------------------------
+MAIN NAVIGATION
+-----------------------------------------------------*/
+
+/* List Styles */
+
+.nav {
+	background: #0b1317;
+	height: 100%;
+	position: relative;
+	z-index: 50;
+}
+
+ul.nav-list, li.nav-item {
+	list-style-type: none;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+li.nav-item {
+	background: #0b1317;
+	padding: 40px 35px;
+	text-align: right;
+	position: relative;
+	z-index: 50;
+}
+
+ul.game-list {
+	background: #0b1317;
+	width: 100%;
+	position: absolute;
+	right: 0%;
+	top: 0px;
+	z-index: 10;
+	list-style-type: none;	
+}
+
+ul.game-list.showlist {
+	right: -100%;
+	top: 220px;
+	height: 110px;
+}
+
+ul.game-list li {
+	line-height: 110px;
+	text-align: right;
+	padding-right: 35px;
+}
+
+/* Anchor Styles */
+
+a.navlink {
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+li.home-item {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	border-top: 1px solid #f4f5f4;
+}
+
+/*-----------------------------------------------------
+WELCOME
+-----------------------------------------------------*/
+
+welcome-page {
+	background: #1c303a;
+}
+
+.welcome-text {
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	margin-left: -130px;
+	letter-spacing: 1px;
+	color: #f4f5f4;
+	text-align: center;
+	font-size: 130%;
+	font-weight: 300;
+}
+
+.welcome-text h1, .welcome-text h2, .welcome-text h3 {
+	line-height: 200%;
+	font-weight: 300;
+}
+
+.welcome-text h1 {
+	font-weight: 400;
+}
+
+/*-----------------------------------------------------
+ABOUT
+-----------------------------------------------------*/
+
+about-page {
+	background: #f4f5f4;
+}
+
+about-page p {
+	color: #000;
+	line-height: 180%;
+	font-size: 18px;
+}
+
+.about-section {
+	position: absolute;
+	width: 100%;
+	right: 0px;
+	height: 100%;
+}
+
+/* Vertical Halves */
+
+.halfbox {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+.left-box {
+	left: 0px;
+}
+
+.right-box {
+	right: 0px;
+}
+
+/* About Image */
+
+.img-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	text-align: right;
+}
+
+img.about-img {
+	height: 100%;
+}
+
+/* Main Content */
+
+.topslice {
+	position: absolute;
+	height: 50%;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.botslice {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.about-text {
+	text-align: center;
+	padding: 5% 40px;
+}
+
+/*-----------------------------------------------------
+SKILL BAR GRAPH
+-----------------------------------------------------*/
+
+.skills {
+	width: 580px;
+	height: 300px;
+	border-left: 3px solid #0b1317;
+	border-bottom: 3px solid #0b1317;
+	position: absolute;
+	left: 50%;
+	margin-left: -290px;
+	top: 20px;
+}
+
+.bar {
+	position: absolute;
+	width: 30px;
+	bottom: 0%;
+	background: #2b4e59;
+}
+
+.htmlf {
+	left: 55px;
+	height: 0%;
+}
+
+.show-section .htmlf {
+	height: 100%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.cssf {
+	left: 120px;
+	height: 0%;
+}
+
+.show-section .cssf {
+	height: 100%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.jsf {
+	left: 185px;
+	height: 0%;
+}
+
+.show-section .jsf {
+	height: 100%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.phpf {
+  left: 250px;
+  height: 0%;
+}
+
+.show-section .phpf {
+	height: 75%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.wpf {
+	left: 315px;
+	height: 0%;
+}
+
+.show-section .wpf {
+	height: 85%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.jqf {
+	left: 379px;
+	height: 0%;
+}
+
+.show-section .jqf {
+	height: 85%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.ajf {
+	left: 443px;
+	height: 0%;
+}
+
+.show-section .ajf {
+	height: 50%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.sassf {
+	left: 506px;
+	height: 0%;
+}
+
+.show-section .sassf {
+	height: 50%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.skills ul {
+	position: absolute;
+	bottom: -5%;
+	height: 5%;
+	width: 100%;
+}
+
+.skills ul li {
+	display: inline;
+	position: absolute;
+	border-bottom: 1px solid #0b1317;
+	padding-bottom: 5px;
+	-moz-transform:    rotate(-65deg);     
+    -o-transform:      rotate(-65deg);     
+    -webkit-transform: rotate(-65deg);     
+    transform:         rotate(-65deg);
+  padding-right: 40px;
+  z-index: 30;
+}
+
+.skills ul li p {
+	font-size: 16px;
+}
+
+li#html {
+	left: 0px;
+	top: 10px;
+}
+
+li#css {
+	left: 65px;
+	padding-right: 56px;
+	top: 11px;
+}
+
+li#jq {
+	left: 130px;
+	padding-right: 21px;
+	top: 11px;
+}
+
+li#php {
+	left: 195px;
+	padding-right: 60px;
+	top: 11px;
+}
+
+li#wp {
+	left: 260px;
+	padding-right: 13px;
+	top: 11px;
+}
+
+li#js {
+	left: 325px;
+	top: 10px;
+	padding-right: 42px;
+}
+
+li#aj {
+	left: 390px;
+	padding-right: 58px;
+	top: 10px;
+}
+
+li#sass {
+	left: 455px;
+	padding-right: 58px;
+	top: 8px;
+}
+
+/*-----------------------------------------------------
+PAST WORK
+-----------------------------------------------------*/
+
+past-work {
+	background: #f4f5f4;
+	overflow: hidden;
+}
+
+past-work h1, past-work h2, past-work p {
+	color: #000;
+}
+
+/* Text Area Styling */
+
+.work-section {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	right: 0px;
+}
+
+.work-maintext {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	right: 0px;
+	bottom: -100%;
+	overflow: scroll;
+	background: #0b1317;
+	padding-bottom: 100px;
+}
+
+.worklist-wrapper {
+	margin-bottom: 60px;
+}
+
+.show-work {
+	bottom: 0px;
+}
+
+.work-maintext * {
+	color: #f4f5f4;
+}
+
+.full-work {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+h2.full-head {
+	padding: 25px 0px 25px;
+	margin: 0px 0px;
+	border-bottom: 1px solid #f4f5f4;
+}
+
+.full-head {
+	text-align: center;
+}
+
+ul.worklist {
+	padding: 0px 25px;
+	list-style-type: none;
+}
+
+li.worklist-item {
+	padding: 25px 0px;
+	border-bottom: 1px solid #f4f5f4;
+}
+
+li.worklist-item:last-of-type {
+	border-bottom-style: hidden;
+}
+
+.worklist-header h2{
+	font-size: 20px;
+}
+
+.worklist-content p {
+	line-height: 140%;
+}
+
+/* Expander Button */
+
+.fullwork-btn {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 20%;
+	height: 100px;
+	background: #0b1317;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.fullwork-btn p {
+	color: #f4f5f4;
+	text-transform: uppercase;
+	font-size: 26px;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 5px;
+	left: 45px;
+}
+
+.fullwork-btn:before {
+	position: absolute;
+	height: 100px;
+	right: 10px;
+	line-height: 85px;
+	bottom: -100px;
+	width: 30px;
+	font-size: 42px;
+	background: none;
+	content: '\2191';
+	color: #f4f5f4;
+}
+
+.fullwork-btn:hover:before {
+	bottom: -6px;
+}
+
+.wrk-toggle.fullwork-btn:before {
+	content: '\2193';
+}
+
+/*-----------------------------------------------------
+FEATURED WORK
+-----------------------------------------------------*/
+
+.featured-work {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+}
+
+/* Featured Item Positions */
+
+.featured-item {
+	text-align: center;
+	width: 100%;
+	height: 25%;
+	position: absolute;
+	top: 0%;
+	overflow: hidden;
+	padding: 0px 0px;	
+	background-image: url('img/iwhc-screenshot.png');
+}
+
+.featured-item:nth-of-type(2) {
+	top: 25%;
+	background-image: url('img/pp-screenshot.png');
+}
+
+.featured-item:nth-of-type(3) {
+	top: 50%;
+	background-image: url('img/rf-screenshot.png');
+}
+
+.featured-item:nth-of-type(4) {
+	top: 75%;
+	background-image: url('img/cc-screenshot.png');
+}
+
+/* Background Color Overlay */
+
+.featured-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	background: rgba(234,89,69,0.3);
+}
+
+/* Title Color and Positioning */
+
+.featured-header {
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	right: 0px;
+	background: #4f88a4;
+}
+
+.featured-item:nth-of-type(2) .featured-header {
+	left: 0px;
+}
+
+.featured-item:nth-of-type(4) .featured-header {
+	left: 0px;
+}
+
+.featured-header h2 {
+	color: #f4f5f4;
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	font-weight: 400;
+	left: 50%;
+	width: 600px;
+	margin-left: -300px;
+}
+
+.featured-description {
+	position: absolute;
+	width: 35%;
+	left: -100%;
+	bottom: 0%;
+	background: #fff;
+}
+
+
+
+/*-----------------------------------------------------
+CONTACT
+-----------------------------------------------------*/
+
+.contact-section {
+
+}
+
+/*-----------------------------------------------------
+TRANSITIONS
+-----------------------------------------------------*/
+
+.hidden {
+	opacity: 0.0;
+}
+
+.fullwork-btn:hover:before, .fullwork-btn:before, 
+.hidden, .fullwork-btn p, .show-work, .work-maintext {
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-moztransition: all 0.4s linear;
+}
+
+.show-work, .work-maintext {
+	transition: all 0.6s ease-out;
+	-webkit-transition: all 0.6s ease-out;
+	-moztransition: all 0.6s ease-out;
+}
