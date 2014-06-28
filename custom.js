@@ -15,6 +15,19 @@ $(document).ready(function(){
 		this.removeClass('hide-section').addClass('show-section');
 	};
 
+	$.fn.revealWork = function(){
+		if($(".workDown").length)
+		{
+			$(this).removeClass("workUp");
+			$('.featured-item').removeClass("workDown");
+		}
+		else
+		{
+			$('.featured-item').addClass("workDown");
+			$(this).removeClass("workDown").addClass("workUp");
+		}
+	};
+
 	// Initial Config
 	$('.nav').heightFromWin();
 	$('.main').heightFromWin();
@@ -42,8 +55,5 @@ $(document).ready(function(){
 	});
 	$('a.game-link').on("click", function(){
 		$('ul.game-list').toggleClass('showlist');
-	})
-
-	//Full Work Slider
-	
+	})	
 });

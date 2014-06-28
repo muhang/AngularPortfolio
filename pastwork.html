@@ -1,7 +1,7 @@
 <div class="page-contanier work-section" ng-controller="WorkController as pastwork">
 	<div class="featured-work">
-		<div class="featured-item" ng-repeat="work in pastwork.works" ng-show="work.featured">
-			<div class="featured-overlay">
+		<div class="featured-item" ng-repeat="work in pastwork.works" ng-show="work.featured" onclick="$(this).revealWork()">
+			<div class="featured-overlay workDefault">
 				<div class="featured-header {{work.classname}}">
 					<h2>{{work.name}}</h2>
 				</div>
@@ -9,7 +9,7 @@
 					<p>Platform: {{work.platform}}</p>
 					<p>Tools: {{work.tools}}</p>
 					<p>{{work.description}}</p>
-					<a href="{{work.url}}" class="worklist-link">Visit Site</a>
+					<a href="{{work.url}}" class="worklist-link" target="_blank">Visit Site</a>
 				</div>
 			</div>
 		</div>
@@ -31,7 +31,7 @@
 							<p>Platform: {{work.platform}}</p>
 							<p>Tools: {{work.tools}}</p>
 							<p>{{work.description}}</p>
-							<a href="{{work.url}}" class="worklist-link">Visit Site</a>
+							<a href="{{work.url}}" class="worklist-link" target="_blank">Visit Site</a>
 						</div>
 					</li>
 				</ul>

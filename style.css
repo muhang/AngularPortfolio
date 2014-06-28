@@ -11,6 +11,7 @@ GENERAL STYLES
 
 body {
 	background: #1c303a;
+	/* cursor: url(img/curson.png), auto; */
 }
 
 h1, h2, h3, h4 {
@@ -151,6 +152,8 @@ welcome-page {
 /*-----------------------------------------------------
 ABOUT
 -----------------------------------------------------*/
+
+
 
 about-page {
 	background: #f4f5f4;
@@ -452,10 +455,6 @@ past-work h1, past-work h2, past-work p {
 	padding-bottom: 100px;
 }
 
-.worklist-wrapper {
-	margin-bottom: 60px;
-}
-
 .show-work {
 	bottom: 0px;
 }
@@ -493,6 +492,7 @@ li.worklist-item {
 
 li.worklist-item:last-of-type {
 	border-bottom-style: hidden;
+	padding-bottom: 100px;
 }
 
 .worklist-header h2{
@@ -562,6 +562,7 @@ FEATURED WORK
 /* Featured Item Positions */
 
 .featured-item {
+	cursor: pointer;
 	text-align: center;
 	width: 100%;
 	height: 25%;
@@ -594,8 +595,21 @@ FEATURED WORK
 	width: 100%;
 	height: 100%;
 	left: 0px;
-	background: rgba(234,89,69,0.3);
+	background: rgba(255,53,158,0.5);
 }
+
+.featured-item:nth-of-type(2) .featured-overlay {
+	background: rgba( 74, 198, 198, 0.5);
+}
+
+.featured-item:nth-of-type(3) .featured-overlay {
+	background: rgba( 234, 89, 69, 0.5);
+}
+
+.featured-item:nth-of-type(4) .featured-overlay {
+	background: rgba( 67, 128, 222, 0.5);
+}
+
 
 /* Title Color and Positioning */
 
@@ -604,14 +618,27 @@ FEATURED WORK
 	width: 50%;
 	position: absolute;
 	right: 0px;
-	background: #4f88a4;
+	background: rgb(255,53,158);
 }
 
-.featured-item:nth-of-type(2) .featured-header {
+.featured-description {
+	background: rgb(255,53,158);
+}
+
+.featured-item:nth-of-type(2) .featured-header,
+.featured-item:nth-of-type(2) .featured-description {
 	left: 0px;
+	background: rgb(74, 198, 198);
 }
 
-.featured-item:nth-of-type(4) .featured-header {
+.featured-item:nth-of-type(3) .featured-header, 
+.featured-item:nth-of-type(3) .featured-description {
+	background: rgb(234, 89, 69);
+}
+
+.featured-item:nth-of-type(4) .featured-header,
+.featured-item:nth-of-type(4) .featured-description {
+	background: rgb(67, 128, 222);
 	left: 0px;
 }
 
@@ -624,17 +651,59 @@ FEATURED WORK
 	left: 50%;
 	width: 600px;
 	margin-left: -300px;
+	font-size: 28px;
+	letter-spacing: 1px;
 }
 
 .featured-description {
 	position: absolute;
 	width: 35%;
-	left: -100%;
-	bottom: 0%;
-	background: #fff;
+	height: 60%;
+	left: 0%;
+	bottom: -100%;
+	padding: 15px 25px;
 }
 
+.featured-description p {
+		color: #f4f5f4;
+		font-size: 20px;
+		line-height: 200%;
+}
 
+.featured-description p:last-of-type {
+	margin-bottom: 65px;
+}
+
+.featured-description a.worklist-link {
+	font-size: 22px;
+	padding: 15px 25px;
+	border: 1px solid #f4f5f4;
+}
+
+.featured-item:hover .featured-header {
+	width: 100%;
+}
+
+/* Slide out effect for featured items */
+
+.workUp {
+	top: 0% !important;
+	height: 100%;
+}
+
+.workUp .featured-header {
+	width: 100%;
+	height: 25%;
+	top: 0%;
+}
+
+.workUp .featured-description {
+	bottom: 0%;
+}
+
+.workDown {
+	top: 100% !important;
+}
 
 /*-----------------------------------------------------
 CONTACT
@@ -659,7 +728,8 @@ TRANSITIONS
 	-moztransition: all 0.4s linear;
 }
 
-.show-work, .work-maintext {
+.show-work, .work-maintext, .workUp, .workDown, 
+.featured-item, .featured-header, .featured-description {
 	transition: all 0.6s ease-out;
 	-webkit-transition: all 0.6s ease-out;
 	-moztransition: all 0.6s ease-out;
