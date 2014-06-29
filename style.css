@@ -795,12 +795,6 @@ input[type="submit"] {
 	-moztransition: all 0.6s ease-out;
 }
 
-.hide-section, .show-section {
-	transition: all 1s ease-out;
-	-webkit-transition: all 1s ease-out;
-	-moztransition: all 1s ease-out;
-}
-
 /*-----------------------------------------------------
 SMALL DESKTOP / LAPTOP
 -----------------------------------------------------*/
@@ -838,15 +832,32 @@ TABLET (PORTRAIT & LANDSCAPE)
 	.nav, .work-maintext, .fullwork-btn {
 		display: none;
 	}
-	welcome-page, about-page, past-work {
-		position: static;
+	.content {
 		width: 100%;
-		height: auto;
+	}
+	welcome-page, about-page, past-work {
+		position: relative;
+		width: 100%;
+		height: 800px;
 		display: block;
 		z-index: 10 !important;
 		opacity: 1.0 !important;
 	}
 	past-work {
 		height: 800px;
+	}
+	.featured-header {
+		width: 100%;
+	}
+	.left-box.halfbox {
+		width: 100%;
+		position: relative;
+		height: auto;
+	}
+	.right-box.halfbox {
+		display: none;
+	}
+	about-page {
+		height: 500px;
 	}
 }
